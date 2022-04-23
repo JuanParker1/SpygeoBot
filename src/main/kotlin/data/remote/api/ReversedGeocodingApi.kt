@@ -10,7 +10,8 @@ interface ReversedGeocodingApi {
     @GET("reverse")
     fun getCountryNameByCoordinates(
         @Query("lat") latitude: String,
-        @Query("lon") longtitude: String,
-        @Query("format") formatData: String
+        @Query("lon") longitude: String,
+        @Query("format") dataFormat: String
     ): Deferred<ReversedCountry>
+
 }
